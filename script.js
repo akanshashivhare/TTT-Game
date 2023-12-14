@@ -3,7 +3,6 @@ let reset = document.querySelector(".reset");
 let newbtn = document.querySelector("#new-btn");
 let msg = document.querySelector("#msg");
 let msgbox = document.querySelector(".msg-box");
-
 let turnO= true;
 
 const winPatterns = [[ 0, 1, 2], 
@@ -22,7 +21,7 @@ const resetgame = () => {
     msgbox.classList.add("hide");
 };
 
-// console.log(boxes);
+
 for (let box of boxes) {
     box.addEventListener("click", () => {
         if (turnO) {
@@ -38,10 +37,8 @@ for (let box of boxes) {
 }
  
 
-
-
 const showWinner = (winner) => {
-    msg.innerText =  `winner winner ${winner}`;
+    msg.innerText =  `Winner Winner ${winner}`;
     msgbox.classList.remove("hide");
     disablebtn();
 };
@@ -55,12 +52,12 @@ for(let box of boxes)  {
 }
 };
 
+
 const enablebtn = () =>
 {
 for(let box of boxes)  {
     box.disabled = false;
-box.innerText ="";
-
+    box.innerText ="";
 }
 };
 
@@ -74,7 +71,7 @@ const drawgame = () => {
 
 
 const checkWinner = () => {
-    let draw= true;
+    let draw = true;
     for (let pattern of winPatterns) {
         let  posval1 = boxes[pattern[0]].innerText;
         let  posval2 = boxes[pattern[1]].innerText;
@@ -88,12 +85,12 @@ const checkWinner = () => {
             }
             
         }
-        else {
+            else {
             draw = false;
         }
     }
-    if (draw) {
-        drawgame();
+          if (draw) {
+          drawgame();
     }
 };
 

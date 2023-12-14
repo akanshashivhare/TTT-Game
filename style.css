@@ -1,13 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: rgb(89, 170, 143);
     text-align: center;
 }
 
-.container{
+.container {
     height: 70vh;
     display: flex;
     justify-content: center;
@@ -30,15 +31,15 @@ body{
     height:18vmin;
     width: 18vmin;
     border-radius: 1rem;
- border: none;
- box-shadow:  0 0 16px black;
-font-size: 50px;
-color: rgb(95, 47, 141);
-background-color: rgb(119, 168, 168);
+    border: none;
+    box-shadow:  0 0 16px black;
+    font-size: 50px;
+    color: rgb(95, 47, 141);
+    background-color: rgb(119, 168, 168);
 }
 
-.reset{
- padding: 1rem;
+.reset {
+padding: 1rem;
 font-size: 1.5rem;
 background-color: black;
 color: azure;
@@ -55,11 +56,12 @@ border-radius: 1rem;
 
 }
 
-#msg{
+#msg {
     color: whitesmoke;
     font-size: 5vmin;
 }
-.msg-box{
+
+.msg-box  {
     height: 100vmin;
     display: flex;
     justify-content: center;
@@ -67,6 +69,7 @@ border-radius: 1rem;
     flex-direction: column;
     gap: 4rem;
 }
+
  .hide{
     display: none;
  }
